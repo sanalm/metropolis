@@ -5,12 +5,12 @@ import os
 import machine
 
 def check_for_update_to_install_during_next_reboot():
-    o = OTAUpdater('https://github.com/sanalm/metropolis.git')
+    o = OTAUpdater('https://github.com/sanalm/metropolis')
     o.using_network(ssid, password)
     o.check_for_update_to_install_during_next_reboot()
 
 def download_and_install_update_if_available():
-    o = OTAUpdater('https://github.com/sanalm/metropolis.git')
+    o = OTAUpdater('https://github.com/sanalm/metropolis')
     o.using_network(ssid, password)
     o.download_and_install_update_if_available(ssid, password)
 
